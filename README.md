@@ -15,29 +15,17 @@ A pendant drop at static equilibrium is governed by the balance between gravitat
 
 The theoretical profile of the pendant drop is obtained by solving the following set of ordinary differential equations (ODEs):
 
-<!-- Equation (1) -->
-<p>
-\[
+$$
 \frac{d\varphi}{d\tilde{s}} = 2 + Bo \cdot \tilde{z} - \frac{\sin(\varphi)}{\tilde{x}} \tag{1}
-\]
-</p>
+$$
 
-<!-- Equation (2) -->
-<p>
-\[
+$$
 \frac{d\tilde{x}}{d\tilde{s}} = \cos(\varphi) \tag{2}
-\]
-</p>
+$$
 
-<!-- Equation (3) -->
-<p>
-\[
+$$
 \frac{d\tilde{z}}{d\tilde{s}} = \sin(\varphi) \tag{3}
-\]
-</p>
-
-</body>
-</html>
+$$
 
 Where:
 
