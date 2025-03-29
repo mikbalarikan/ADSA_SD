@@ -42,11 +42,11 @@ Where:
 
 By solving these equations and fitting the resulting theoretical profile to the experimental image, the surface tension can be accurately determined.
 
-### Installation & User Guide for ADSA Analysis
+# Installation & User Guide for ADSA Analysis
 
 This ADSA (Axisymmetric Drop Shape Analysis) code is provided as a Jupyter notebook (`ADSA_SD.ipynb`) and can be executed on any system (Windows, macOS, Linux) with Jupyter installed.
 
-### Execution Guide
+## Execution Guide
 
 1. **Install Dependencies:**
    - Ensure Python is installed (recommended Python 3.7 or newer).
@@ -70,7 +70,7 @@ This ADSA (Axisymmetric Drop Shape Analysis) code is provided as a Jupyter noteb
 4. **Execute the Analysis:**
    - Follow the notebook cells sequentially and execute each step.
 
-### Required Libraries
+## Required Libraries
 
 The notebook requires the following Python libraries:
 - NumPy
@@ -85,6 +85,6 @@ Install them all at once with:
 pip install numpy matplotlib pandas scipy scikit-image opencv-python jupyter
 ```
 
-### Example Images
+## Example Images
 
 Example images are provided in the `example_images` folder to assist you in verifying the notebook functionality.
