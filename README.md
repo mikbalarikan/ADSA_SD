@@ -15,15 +15,6 @@ A pendant drop at static equilibrium is governed by the balance between gravitat
 
 The theoretical profile of the pendant drop is obtained by solving the following set of ordinary differential equations (ODEs):
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Equations Display</title>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
-<body>
-
 <!-- Equation (1) -->
 <p>
 \[
