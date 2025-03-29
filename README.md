@@ -84,4 +84,7 @@ This ADSA (Axisymmetric Drop Shape Analysis) code is provided as a Jupyter noteb
 ### Execution Guide
 
 1. **Install Dependencies:**
-   - Ensure Python is installed (recommended Python 3.7 or newer
+   - Ensure Python is installed (recommended Python 3.7 or newer).
+   - Install necessary packages:
+   ```bash
+   pip install numpy matplotlib pandas scipy jupyter scikit-image opencv-python
