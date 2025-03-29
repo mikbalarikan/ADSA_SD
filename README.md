@@ -32,6 +32,7 @@ $$
 $$
 \frac{d\tilde{z}}{d\tilde{s}} = \sin(\varphi)
 $$
+
 Where:
 
 - $\varphi$ is the angle between the tangent to the drop profile and the horizontal axis.
