@@ -42,62 +42,46 @@ Where:
 
 By solving these equations and fitting the resulting theoretical profile to the experimental image, the surface tension can be accurately determined.
 
-\section*{Installation \& User Guide for ADSA Analysis}
+# ADSA_SD
 
-This ADSA (Axisymmetric Drop Shape Analysis) code is provided as a Jupyter notebook (\texttt{ADSA\_SD.ipynb}) and can be executed on any system (Windows, macOS, Linux) with Jupyter installed.
+ADSA_SD is an optical surface tension measurement tool for Sessile Droplet (SD). The code gets a drop image and physical properties as an input and detects edge coordinates of a drop, solves the Laplace equation numerically, and optimizes the Laplace solution until it fits the experimental drop profile. The final output is the surface tension value.
 
-\section*{Execution Guide}
+## Axisymmetric Sessile Drop Shape Analysis (ADSA) for Surface Tension Measurement
 
-\begin{enumerate}
-    \item \textbf{Install Dependencies:}
-    \begin{itemize}
-        \item Ensure Python is installed (recommended Python 3.7 or newer).
-        \item Install necessary packages by running:
-        \begin{verbatim}
-pip install numpy matplotlib pandas scipy jupyter scikit-image opencv-python
-        \end{verbatim}
-    \end{itemize}
+ADSA_SD notebook demonstrates the measurement of surface tension from geometric parameters of a sessile drop by analyzing its captured image and fitting the Young-Laplace equation to the experimentally obtained droplet profile.
 
-    \item \textbf{Running the Notebook:}
-    \begin{itemize}
-        \item Open a terminal or command prompt in the directory containing \texttt{ADSA\_SD.ipynb}.
-        \item Launch Jupyter Notebook by typing:
-        \begin{verbatim}
-jupyter notebook
-        \end{verbatim}
-        \item Select and open \texttt{ADSA\_SD.ipynb} from your web browser.
-    \end{itemize}
+<a href="https://ibb.co/d4bx5c0L"><img src="https://i.ibb.co/k23vSyg9/Sessile.png" alt="Sessile" border="0"></a>
 
-    \item \textbf{Prepare your Drop Images:}
-    \begin{itemize}
-        \item Crop images closely around the droplet.
-        \item Ensure drop edges are sharp and clear to avoid pixel-based measurement errors.
-    \end{itemize}
+### Physical Background
 
-    \item \textbf{Execute the Analysis:}
-    \begin{itemize}
-        \item Follow the notebook cells sequentially and execute each step.
-    \end{itemize}
-\end{enumerate}
+A sessile drop at static equilibrium is governed by the balance between gravitational forces and surface tension. This equilibrium state is mathematically described by the **Young-Laplace equation**, which relates the shape of the drop to the forces acting upon it.
 
-\section*{Required Libraries}
+### Governing Equations
 
-The notebook requires the following Python libraries:
-\begin{itemize}
-    \item NumPy
-    \item Matplotlib
-    \item Pandas
-    \item SciPy
-    \item scikit-image
-    \item OpenCV (\texttt{cv2})
-\end{itemize}
+The theoretical profile of the sessile drop is obtained by solving the following set of ordinary differential equations (ODEs):
 
-Install them all at once with:
-\begin{verbatim}
-pip install numpy matplotlib pandas scipy scikit-image opencv-python jupyter
-\end{verbatim}
+1.
+$$
+\frac{d\varphi}{d\tilde{s}} = 2 + Bo \cdot \tilde{z} - \frac{\sin(\varphi)}{\tilde{x}}
+$$
 
-\section*{Example Images}
+2.
+$$
+\frac{d\tilde{x}}{d\tilde{s}} = \cos(\varphi)
+$$
 
-Example images are provided in the \texttt{example\_images} folder to assist you in verifying the notebook functionality.
+3.
+$$
+\frac{d\tilde{z}}{d\tilde{s}} = \sin(\varphi)
+$$
 
+---
+
+### Installation & User Guide for ADSA Analysis
+
+This ADSA (Axisymmetric Drop Shape Analysis) code is provided as a Jupyter notebook (`ADSA_SD.ipynb`) and can be executed on any system (Windows, macOS, Linux) with Jupyter installed.
+
+### Execution Guide
+
+1. **Install Dependencies:**
+   - Ensure Python is installed (recommended Python 3.7 or newer
